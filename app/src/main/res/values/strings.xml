@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Paint</string>
     <string name="step_by_step_painting_tutorial">Step by step painting tutorial</string>
+    <string name="list">List</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="exit">Exit</string>
 </resources>
