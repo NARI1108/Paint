@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_Us_Activity"
+    android:background="@drawable/background">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/step_by_step_painting_tutorial"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>
