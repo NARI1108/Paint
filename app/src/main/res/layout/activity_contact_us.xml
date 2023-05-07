@@ -1,22 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".contact_Us_Activity"
     android:background="@drawable/background">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/yellow">
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/txt_material_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/step_by_step_painting_tutorial"
-            android:layout_marginStart="8dp"
             android:textColor="@color/black"
             android:textSize="21sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
-</LinearLayout>
+
+    <TextView
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/txt_material_contact"
+        android:layout_width="407dp"
+        android:layout_height="648dp"
+        android:gravity="fill_horizontal"
+        android:text="@string/contact_us.txt"
+        android:textColor="@color/black"
+        android:textSize="22.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_Phone"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="211dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/Number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/img_Eitaa"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_material_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Phone"
+        app:layout_constraintVertical_bias="0.184"
+        app:srcCompat="@drawable/eitaa" />
+
+    <TextView
+        android:id="@+id/txt_eitaa"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/Eitaa"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_telegram"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Eitaa"
+        app:layout_constraintVertical_bias="0.263"
+        app:srcCompat="@drawable/telegram" />
+
+    <TextView
+        android:id="@+id/txt_telegram"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="@string/telegram"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_eitaa"
+        app:layout_constraintVertical_bias="0.46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
