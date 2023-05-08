@@ -10,7 +10,7 @@
 
 
 <p>
-   <li>This application actually predicts your future love. How? By entering your name and age and placing your fingers on the fingerprint, this app predicts your future love. You even tell you the age and name of the city of your love.</li></p>
+   <li>/////////////////////////////////////////////////////////////////// .</li></p>
 
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
