@@ -11,25 +11,25 @@
 
 <ul>
     <li>
-           Material Design training (making a drop-down menuNavigationDrawer)
+           Teaching other tips related to the principles of Multiple Screen design
     </li>  
      <li>
-           Learning how to work with phone vibration in Java language
+           Imageview training and image gallery creation
      </li>     
      <li>
-           How to make a Timer in Android Studio
+           Introduction to Animation in the program
      </li> 
      <li>
-           Learning how to create random numbers in Java
+           Teaching how to play music in the program and explaining the raw folder
      </li>      
      <li>
-           Add voice typing to the program
+           Custom ActionBar tutorial
      </li>       
      <li>
-           Familiarity with sending information between activities
+           Disable automatic screen rotation
      </li>   
      <li>
-           Learning how to style EditTexts
+           Learning how to exit the program
      </li>
 </ul>
 
