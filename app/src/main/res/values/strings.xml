@@ -21,4 +21,12 @@
     <string name="telegram">
             NRAI0811
     </string>
+    <string name="about_us.txt">
+            The Lollipop Android development team is actually
+            a producer of Android software. Lollipop company is
+            a knowledge-based company. which is run by trainees.
+            You can support our company and improve efficient software.
+            Thanks for using our products.
+    </string>
+    <string name="version_13_2_1">version 13.2.1</string>
 </resources>

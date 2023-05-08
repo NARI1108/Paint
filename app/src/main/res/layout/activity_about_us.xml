@@ -1,23 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".about_Us_Activity"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".about_Us_Activity">
+
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/yellow">
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/step_by_step_painting_tutorial"
-            android:layout_marginStart="8dp"
             android:textColor="@color/black"
             android:textSize="21sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/txt_material_about_us"
+        android:layout_width="410dp"
+        android:layout_height="311dp"
+        android:gravity="left"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/about_us.txt"
+        android:textColor="@color/black"
+        android:textSize="22.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/img_Icon"
+        android:layout_width="103dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_material_about_us"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="200dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="@string/version_13_2_1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_material_about_us"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
