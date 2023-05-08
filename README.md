@@ -4,7 +4,10 @@
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 
 </h3>
-<code><strong>About App</strong></code>
+
+
+## <code><strong>About App</strong></code> ##
+
 
 <p>
    <li>This application actually predicts your future love. How? By entering your name and age and placing your fingers on the fingerprint, this app predicts your future love. You even tell you the age and name of the city of your love.</li></p>
