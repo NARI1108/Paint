@@ -29,4 +29,11 @@
             Thanks for using our products.
     </string>
     <string name="version_13_2_1">version 13.2.1</string>
+    <string name="list_title">Click on them to see the tutorials</string>
+    <string name="todo">TODO</string>
+    <string name="todo_1">TODO</string>
+    <string name="todo_2">TODO</string>
+    <string name="todo_3">TODO</string>
+    <string name="todo_4">TODO</string>
+    <string name="todo_5">TODO</string>
 </resources>
