@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Paint"
         tools:targetApi="31">
         <activity
+            android:name=".ostrich_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".goat_Activity"
+            android:exported="false" />
+        <activity
             android:name=".list_Activity"
             android:exported="false" />
         <activity

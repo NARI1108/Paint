@@ -33,7 +33,7 @@
         android:layout_width="410dp"
         android:layout_height="311dp"
         android:gravity="left"
-        android:paddingLeft="4dp"
+        android:paddingLeft="20dp"
         android:paddingTop="4dp"
         android:paddingRight="4dp"
         android:paddingBottom="4dp"
