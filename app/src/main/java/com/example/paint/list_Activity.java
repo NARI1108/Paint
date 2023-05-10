@@ -55,6 +55,7 @@ public class list_Activity extends AppCompatActivity {
                   break;
               case R.id.imgb_ostrich:startActivity(new Intent(list_Activity.this,ostrich_Activity.class));
                   break;
+
               case R.id.imgb_cow:
               case R.id.imgb_chick:
               case R.id.imgb_zebra:

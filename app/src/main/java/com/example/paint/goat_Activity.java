@@ -9,6 +9,6 @@ public class goat_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_goat);
+        setContentView(R.layout.activity_tutorial);
     }
 }
