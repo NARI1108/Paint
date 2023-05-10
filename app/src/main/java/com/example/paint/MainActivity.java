@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
     public void btnsClick(View view){
         int id =view.getId();
         switch(id){
-            case R.id.btn_abt_us:startActivity(new Intent(MainActivity.this,about_Us_Activity.class));
+            case R.id.btn_list:   startActivity(new Intent(MainActivity.this,list_Activity.class));
             break;
-            case R.id.btn_cnt_us:startActivity(new Intent(MainActivity.this,contact_Us_Activity.class));
+            case R.id.btn_abt_us: startActivity(new Intent(MainActivity.this,about_Us_Activity.class));
             break;
-            case R.id.btn_ext:finish();
+            case R.id.btn_cnt_us: startActivity(new Intent(MainActivity.this,contact_Us_Activity.class));
+            break;
+            case R.id.btn_ext:    finish();
         }
     }
 }
