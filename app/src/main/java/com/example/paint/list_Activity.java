@@ -2,11 +2,14 @@ package com.example.paint;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class list_Activity extends AppCompatActivity {
     ImageButton imgb_goat, imgb_ostrich, imgb_cow, imgb_chick, imgb_zebra, imgb_frog;
@@ -44,5 +47,20 @@ public class list_Activity extends AppCompatActivity {
         txt_home_title.setAnimation(animation_txt_home_title);
         txt_header_list.setAnimation(animation_txt_header);
 
+    }
+    public void btns_click(View view){
+          int id = view.getId();
+          switch(id){
+              case R.id.imgb_goat:startActivity(new Intent(list_Activity.this,goat_Activity.class));
+                  break;
+              case R.id.imgb_ostrich:startActivity(new Intent(list_Activity.this,ostrich_Activity.class));
+                  break;
+              case R.id.imgb_cow:
+              case R.id.imgb_chick:
+              case R.id.imgb_zebra:
+              case R.id.imgb_frog:
+                  Toast.makeText(this, "It will be updated soon.", Toast.LENGTH_SHORT).show();
+                  break;
+          }
     }
 }
