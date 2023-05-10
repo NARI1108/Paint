@@ -36,4 +36,8 @@
     <string name="todo_3">TODO</string>
     <string name="todo_4">TODO</string>
     <string name="todo_5">TODO</string>
+    <string name="previous">previous</string>
+    <string name="text">text</string>
+    <string name="next">next</string>
+    <string name="start">start</string>
 </resources>
