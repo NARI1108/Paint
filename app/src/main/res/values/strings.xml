@@ -40,4 +40,5 @@
     <string name="text">text</string>
     <string name="next">next</string>
     <string name="start">start</string>
+    <string name="step">step</string>
 </resources>

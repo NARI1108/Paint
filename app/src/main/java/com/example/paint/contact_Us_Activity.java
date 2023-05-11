@@ -18,6 +18,10 @@ public class contact_Us_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
 
+        findViews();
+        animation();
+    }
+    public void findViews(){
         img_Phone = findViewById(R.id.img_Phone);
         txt_number = findViewById(R.id.txt_number);
         txt_material_contact = findViewById(R.id.txt_material_contact);
@@ -26,7 +30,8 @@ public class contact_Us_Activity extends AppCompatActivity {
         txt_eitaa  = findViewById(R.id.txt_eitaa);
         img_telegram = findViewById(R.id.img_telegram);
         txt_telegram = findViewById(R.id.txt_telegram);
-
+    }
+    public void animation(){
         Animation animation_img_phone = AnimationUtils.loadAnimation(contact_Us_Activity.this,R.anim.anim_trans_left);
         Animation animation_txt_number = AnimationUtils.loadAnimation(contact_Us_Activity.this,R.anim.anim_trans_right);
         Animation animation_txt_material_contact = AnimationUtils.loadAnimation(contact_Us_Activity.this,R.anim.alpha);

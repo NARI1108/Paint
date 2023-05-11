@@ -20,6 +20,10 @@ public class list_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+        findViews();
+        animation();
+    }
+    public void findViews(){
         imgb_goat = findViewById(R.id.imgb_goat);
         imgb_ostrich = findViewById(R.id.imgb_ostrich);
         imgb_cow = findViewById(R.id.imgb_cow);
@@ -28,7 +32,8 @@ public class list_Activity extends AppCompatActivity {
         imgb_frog  = findViewById(R.id.imgb_frog);
         txt_home_title = findViewById(R.id.txt_home_title);
         txt_header_list = findViewById(R.id.txt_header_list);
-
+    }
+    public void animation(){
         Animation animation_imgb_goat = AnimationUtils.loadAnimation(list_Activity.this,R.anim.anim_trans_left);
         Animation animation_imgb_ostrich = AnimationUtils.loadAnimation(list_Activity.this,R.anim.anim_trans_right);
         Animation animation_imgb_cow = AnimationUtils.loadAnimation(list_Activity.this,R.anim.anim_trans_left);
@@ -46,7 +51,6 @@ public class list_Activity extends AppCompatActivity {
         imgb_frog.setAnimation(animation_imgb_frog);
         txt_home_title.setAnimation(animation_txt_home_title);
         txt_header_list.setAnimation(animation_txt_header);
-
     }
     public void btns_click(View view){
           int id = view.getId();

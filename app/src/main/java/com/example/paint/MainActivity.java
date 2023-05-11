@@ -16,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViews();
+        animation();
+    }
+    public void findViews(){
         btn_list = findViewById(R.id.btn_list);
         btn_abt_us = findViewById(R.id.btn_abt_us);
         btn_cnt_us = findViewById(R.id.btn_cnt_us);
         btn_ext = findViewById(R.id.btn_ext);
+    }
+    public void animation(){
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.alpha);
         Animation animation_rotate = AnimationUtils.loadAnimation(this, R.anim.anim_rotate);
         Animation animation_scale = AnimationUtils.loadAnimation(this, R.anim.anim_scale);
