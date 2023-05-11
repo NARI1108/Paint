@@ -11,7 +11,7 @@
 
 
 <p>
-   <li>/////////////////////////////////////////////////////////////////// .</li></p>
+   <li>This app in fact teaches us how to draw step by step. And it is suitable for children.</li></p>
 
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
