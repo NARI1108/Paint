@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_weight="6">
-
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -13,7 +12,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/txt_header"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/step_by_step_painting_tutorial"
@@ -22,6 +23,7 @@
                 android:textColor="#222"
                 android:layout_alignParentLeft="true"
                 android:layout_marginRight="10dp"/>
+
             <ImageView
                 android:id="@+id/img_Music"
                 android:layout_width="wrap_content"
@@ -29,6 +31,7 @@
                 android:layout_alignParentRight="true"
                 android:onClick="btns_click"
                 android:src="@drawable/music_on" />
+
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
