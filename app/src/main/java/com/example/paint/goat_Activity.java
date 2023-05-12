@@ -28,4 +28,9 @@ public class goat_Activity extends AppCompatActivity {
         music.start();
         super.onResume();
     }
+    @Override
+    protected void onPause() {
+        music.release();
+        super.onPause();
+    }
 }
