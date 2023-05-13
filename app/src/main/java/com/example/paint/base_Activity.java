@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class base_Activity extends AppCompatActivity {
+    public int [] ids={R.drawable.goat_1,R.drawable.goat_2,R.drawable.goat_3,R.drawable.goat_4};
     Button btn_prev, btn_next, btn_start;
     TextView txt_step, txt_header;
     ImageView img_Music;
