@@ -1,12 +1,14 @@
 package com.example.paint;
 
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
 
 public class goat_Activity extends base_Activity {
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,8 +16,10 @@ public class goat_Activity extends base_Activity {
         findViews();
         animation();
 
-        img_show.setImageResource(ids_goat[0]);
-        txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+        img_show.setImageResource(ids_goat[ids_goat.length-1]);
+        txt_step_show.setText((counter+1) +getString(R.string.content_step_show)+ ids_goat.length);
+        lin_buttons.setVisibility(View.INVISIBLE);
+        lin_texts.setVisibility(View.INVISIBLE);
         }
     @Override
     protected void onResume() {
@@ -29,6 +33,7 @@ public class goat_Activity extends base_Activity {
         music.release();
         super.onPause();
     }
+    @SuppressLint("SetTextI18n")
     public void btns_click(View view){
         int id = view.getId();
         if( id  == R.id.img_Music){
@@ -47,14 +52,19 @@ public class goat_Activity extends base_Activity {
                    counter = 0;
                }
                img_show.setImageResource(ids_goat[counter]);
-            txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+            txt_step_show.setText((counter+1) +getString(R.string.content_step_show)+ ids_goat.length);
         } else if ( id == R.id.btn_prev) {
             counter--;
             if(counter<0){
                 counter=ids_goat.length-1;
             }
             img_show.setImageResource(ids_goat[counter]);
-            txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+            txt_step_show.setText((counter+1) +getString(R.string.content_step_show)+ ids_goat.length);
+        } else if ( id == R.id.btn_start) {
+            lin_texts.setVisibility(View.VISIBLE);
+            lin_buttons.setVisibility(View.VISIBLE);
+            img_show.setImageResource(ids_ostrich[counter]);
+            btn_start.setVisibility(View.INVISIBLE);
         }
     }
 }
