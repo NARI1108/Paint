@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class base_Activity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class base_Activity extends AppCompatActivity {
     boolean mute =true;
     MediaPlayer music;
     int counter = 0;
-
+    LinearLayout lin_buttons, lin_texts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,8 @@ public class base_Activity extends AppCompatActivity {
         btn_prev = findViewById(R.id.btn_prev);
         btn_next = findViewById(R.id.btn_next);
         btn_start= findViewById(R.id.btn_start);
+        lin_buttons = findViewById(R.id.lin_buttons);
+        lin_texts = findViewById(R.id.lin_texts);
     }
     public void animation(){
         Animation animation_img_Music  = AnimationUtils.loadAnimation(this,R.anim.alpha);
