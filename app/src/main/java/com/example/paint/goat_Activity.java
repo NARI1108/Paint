@@ -11,10 +11,12 @@ public class goat_Activity extends base_Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
-
         findViews();
         animation();
-    }
+
+        img_show.setImageResource(ids_goat[0]);
+        txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+        }
     @Override
     protected void onResume() {
         music = MediaPlayer.create(goat_Activity.this,R.raw.music);
@@ -26,5 +28,33 @@ public class goat_Activity extends base_Activity {
     protected void onPause() {
         music.release();
         super.onPause();
+    }
+    public void btns_click(View view){
+        int id = view.getId();
+        if( id  == R.id.img_Music){
+           if(mute){
+               music.pause();
+               mute=false;
+               img_Music.setImageResource(R.drawable.music_off);
+           } else {
+               music.start();
+               mute=true;
+               img_Music.setImageResource(R.drawable.music_on);
+           }
+        } else if ( id == R.id.btn_next) {
+               counter++;
+               if(counter == ids_goat.length){
+                   counter = 0;
+               }
+               img_show.setImageResource(ids_goat[counter]);
+            txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+        } else if ( id == R.id.btn_prev) {
+            counter--;
+            if(counter<0){
+                counter=ids_goat.length-1;
+            }
+            img_show.setImageResource(ids_goat[counter]);
+            txt_step_show.setText((counter+1) +"from"+ ids_goat.length);
+        }
     }
 }
