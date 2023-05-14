@@ -16,8 +16,10 @@ public class goat_Activity extends base_Activity {
         findViews();
         animation();
 
-        img_show.setImageResource(ids_goat[0]);
+        img_show.setImageResource(ids_goat[ids_goat.length-1]);
         txt_step_show.setText((counter+1) +getString(R.string.content_step_show)+ ids_goat.length);
+        lin_buttons.setVisibility(View.INVISIBLE);
+        lin_texts.setVisibility(View.INVISIBLE);
         }
     @Override
     protected void onResume() {
