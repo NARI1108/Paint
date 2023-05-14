@@ -41,4 +41,5 @@
     <string name="next">next</string>
     <string name="start">start</string>
     <string name="step">step</string>
+    <string name="content_step_show">from</string>
 </resources>

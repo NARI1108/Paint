@@ -2,6 +2,7 @@ package com.example.paint;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class base_Activity extends AppCompatActivity {
+
     public int [] ids_goat={R.drawable.goat_1,R.drawable.goat_2,R.drawable.goat_3,R.drawable.goat_4};
     public int [] ids_ostrich={R.drawable.ostrich_1,R.drawable.ostrich_2,R.drawable.ostrich_3,R.drawable.ostrich_4,R.drawable.ostrich_5,R.drawable.ostrich_6};
     Button btn_prev, btn_next, btn_start;
@@ -20,6 +22,7 @@ public class base_Activity extends AppCompatActivity {
     boolean mute =true;
     MediaPlayer music;
     int counter = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,5 +52,4 @@ public class base_Activity extends AppCompatActivity {
         btn_start.setAnimation(animation_btn_start);
         txt_step.setAnimation(animation_txt_step);
     }
-
     }
