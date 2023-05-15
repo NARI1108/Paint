@@ -4,6 +4,13 @@
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 
 </h3>
+![home](https://github.com/NARI1108/Paint/assets/125409221/360e1d86-f6f4-439b-a085-22cb4e2d1a43)
+
+![home](https://github.com/NARI1108/Paint/assets/125409221/c056b9ce-3682-4d8e-9ada-48a984b20c63)
+
+![goat](https://github.com/NARI1108/Paint/assets/125409221/a9ee05f3-e06b-4fc7-8fef-06e374146eb7)
+
+![ostrich](https://github.com/NARI1108/Paint/assets/125409221/f9d27ac8-d4bc-4cb2-9958-5aa7e7e083e6)
 
 ## ✨Paint Vidoe
 [Paint](https://github.com/NARI1108/Paint/files/11474935/Samsung.Galaxy.S10.1440x3040.560dpi.-.192.168.251.101.-.Genymotion.2023-05-14.14-36-24.zip)
