@@ -7,6 +7,10 @@
 
 ## ✨Paint Vidoe
 
+
+[Samsung Galaxy S10 (1440x3040, 560dpi) - 192.168.251.101 - Genymotion 2023-05-14 14-36-24.zip](https://github.com/NARI1108/Paint/files/11474935/Samsung.Galaxy.S10.1440x3040.560dpi.-.192.168.251.101.-.Genymotion.2023-05-14.14-36-24.zip)
+
+
 ## <code><strong>About App</strong></code> ##
 
 
