@@ -13,7 +13,7 @@
 ## ✨Paint Vidoe
 [Paint](https://github.com/NARI1108/Paint/files/11474935/Samsung.Galaxy.S10.1440x3040.560dpi.-.192.168.251.101.-.Genymotion.2023-05-14.14-36-24.zip)
 
-<p><strong>You can see a profile of our game below.</strong></p>
+<p><strong>You can see a profile of our app below.</strong></p>
 
 ## <code><strong>About App</strong></code> ##
 
